@@ -1,6 +1,7 @@
-package CheckBox;
+package UiElemetTests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.*;
@@ -109,22 +110,12 @@ public class TextBox {
         } else {
             System.out.println("test uğursuzdur");
         }
+    }
 
-
-
-        driver.quit();
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @AfterEach
+    void finish (){
+        if (driver != null){
+            driver.quit();
+        }
     }
 }

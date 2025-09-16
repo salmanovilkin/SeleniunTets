@@ -1,4 +1,4 @@
-package CheckBox;
+package UiElemetTests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.BeforeEach;
@@ -86,12 +86,6 @@ public class CheckBox {
         String collapseAllXpath="//button[@title='Collapse all']";
         WebElement collapseAllButton = driver.findElement(By.xpath(collapseAllXpath));
         collapseAllButton.click();
-
-
-
-
-
-
 
         //driverden cixis
        //  driver.quit();
